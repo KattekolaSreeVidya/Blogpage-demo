@@ -1,0 +1,148 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styles */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 20%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100vh; /* Make sidebar take full height */
+    position: fixed; /* Fix sidebar in place */
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.sidebar p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.sidebar h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.sidebar a {
+    display: block;
+    margin-bottom: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.profile-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.profile-button:hover {
+    background-color: #0056b3;
+}
+
+/* Header Styles */
+.header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.header p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.header nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Area */
+.main-content {
+    width: 75%;
+    margin-left: 25%; /* Create space between sidebar and main content */
+    padding: 20px;
+}
+
+.post {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.post h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #333;
+}
+
+.post p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.post a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative; /* Sidebar becomes relative */
+    }
+    
+    .main-content {
+        width: 100%;
+        margin-left: 0;
+    }
+}
